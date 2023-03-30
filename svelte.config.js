@@ -1,5 +1,5 @@
 import { vitePreprocess } from '@sveltejs/kit/vite';
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 
 const dev = process.argv.includes('dev');
 
@@ -19,8 +19,7 @@ const config = {
 			fallback: null,
 			precompress: false,
 			strict: true
-		}),
-		paths: { base: dev ? '' : '/samiam376.github.io' }
+		})
 	}
 };
 
