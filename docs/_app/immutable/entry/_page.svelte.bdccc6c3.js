@@ -1,9 +1,0 @@
-import{S as P,i as q,s as D,k as c,q as d,a as k,l as u,m,r as p,h as l,c as A,n as h,b as S,D as a,H as E}from"../chunks/index.ea893c82.js";function F(C){let e,x,f,n,s,b,r,v,_,w,o,I;return{c(){e=c("h1"),x=d("Hello!"),f=k(),n=c("div"),s=c("p"),b=d(`I'm Sam, a software engineer based out of SF. I currently work at
-		`),r=c("a"),v=d("Shepherd"),_=d(`, building technology
-		enabled construction insurance. I love learning new things and diving into the nitty gritty
-		details.`),w=k(),o=c("p"),I=d(`Currently, I'm delving into the world Rust the and trying my hand at Svelte to cure my
-		Typescriptitis. Though, you'll probably find me on the AI hype train soon enough`),this.h()},l(t){e=u(t,"H1",{class:!0});var i=m(e);x=p(i,"Hello!"),i.forEach(l),f=A(t),n=u(t,"DIV",{class:!0});var y=m(n);s=u(y,"P",{class:!0});var g=m(s);b=p(g,`I'm Sam, a software engineer based out of SF. I currently work at
-		`),r=u(g,"A",{class:!0,href:!0});var H=m(r);v=p(H,"Shepherd"),H.forEach(l),_=p(g,`, building technology
-		enabled construction insurance. I love learning new things and diving into the nitty gritty
-		details.`),g.forEach(l),w=A(y),o=u(y,"P",{class:!0});var T=m(o);I=p(T,`Currently, I'm delving into the world Rust the and trying my hand at Svelte to cure my
-		Typescriptitis. Though, you'll probably find me on the AI hype train soon enough`),T.forEach(l),y.forEach(l),this.h()},h(){h(e,"class","mb-4 text-7xl text-amber-600 font-serif font-extrabold drop-shadow-sm"),h(r,"class","text-amber-600"),h(r,"href","https://withshepherd.com/"),h(s,"class","mb-4 text-2xl text-slate-700 font-serif"),h(o,"class","mb-4 text-2xl text-slate-700 font-serif"),h(n,"class","container max-w-xl")},m(t,i){S(t,e,i),a(e,x),S(t,f,i),S(t,n,i),a(n,s),a(s,b),a(s,r),a(r,v),a(s,_),a(n,w),a(n,o),a(o,I)},p:E,i:E,o:E,d(t){t&&l(e),t&&l(f),t&&l(n)}}}class V extends P{constructor(e){super(),q(this,e,null,F,D,{})}}export{V as default};
