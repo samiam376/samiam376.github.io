@@ -3,14 +3,159 @@
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Sam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-panel">
+        <div class="finn-animation"></div>
+      </div>
+      <div class="right-panel">
+        <section class="name-section">
+          <h1>Sam</h1>
+        </section>
+        <section class="about-section">
+          <h2>About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation.
+          </p>
+        </section>
+        <section class="work-section">
+          <h2>What I've Been Working On</h2>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "JetBrains Mono", monospace;
+        background-color: #fafafa;
+        color: #333;
+        line-height: 1.6;
+        height: 100vh;
+        overflow-x: hidden;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .left-panel {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      .right-panel {
+        flex: 1;
+        padding: 4rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .finn-animation {
+        width: 200px;
+        height: 200px;
+        background-image: url("/finn-sprite.png");
+        background-repeat: no-repeat;
+        background-size: 600px 600px;
+        background-position: 0 0;
+        animation: walk 1s infinite steps(1, end);
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+        will-change: background-position;
+      }
+
+      @keyframes walk {
+        0% {
+          background-position: 0px 0px;
+        }
+        33.333% {
+          background-position: -200px 0px;
+        }
+        66.666% {
+          background-position: -400px 0px;
+        }
+        100% {
+          background-position: -400px 0px;
+        }
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #222;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #444;
+      }
+
+      p {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #666;
+        line-height: 1.8;
+      }
+
+      section {
+        margin-bottom: 1.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          height: auto;
+        }
+
+        .left-panel {
+          padding: 2rem 1rem;
+        }
+
+        .right-panel {
+          padding: 2rem 1rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+
+    <!-- Removed dynamic canvas rebuild; using clean CSS keyframes above -->
+  </body>
 </html>
