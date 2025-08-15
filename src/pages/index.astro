@@ -1,0 +1,240 @@
+---
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon.ico/favicon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon.ico/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon.ico/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon.ico/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon.ico/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon.ico/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon.ico/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon.ico/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon.ico/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico/apple-icon-180x180.png" />
+    <link rel="manifest" href="/favicon.ico/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/favicon.ico/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Sam Sheridan</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-panel">
+        <div class="finn-animation"></div>
+      </div>
+      <div class="right-panel">
+        <section class="name-section">
+          <h1>Sam Sheridan</h1>
+          <div class="title-links">
+            <span class="title">Software Engineer</span>
+            <a
+              href="https://www.linkedin.com/in/sam-sheridan/"
+              target="_blank"
+              rel="noopener noreferrer"><strong>LinkedIn</strong></a
+            >
+            <a
+              href="https://github.com/samiam376"
+              target="_blank"
+              rel="noopener noreferrer"><strong>GitHub</strong></a
+            >
+          </div>
+        </section>
+        <section class="work-section">
+          <h2>What I've Been Up To</h2>
+          <div class="work-links">
+            <p>
+              <a
+                href="https://shepherdinsurance.com"
+                target="_blank"
+                rel="noopener noreferrer"><strong>Shepherd</strong></a
+              > - Tech-enabled commercial insurance for high-hazard industries
+            </p>
+            <p>
+              <a
+                href="https://www.ridgelineapps.com/"
+                target="_blank"
+                rel="noopener noreferrer"><strong>Ridgeline</strong></a
+              > - Asset management SaaS
+            </p>
+            <p>
+              <a
+                href="https://ucsb.edu"
+                target="_blank"
+                rel="noopener noreferrer"><strong>UC Santa Barbara</strong></a
+              > - Math
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Times New Roman", serif;
+        background-color: #fefefe;
+        color: #333;
+        line-height: 1.6;
+        height: 100vh;
+        overflow-x: hidden;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 0.5rem;
+      }
+
+      .left-panel {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      .right-panel {
+        flex: 1;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: center;
+      }
+
+      .finn-animation {
+        width: 200px;
+        height: 200px;
+        background-image: url("/finn-sprite.png");
+        background-repeat: no-repeat;
+        background-size: 600px 600px;
+        background-position: 0 0;
+        animation: walk 1s infinite steps(1, end);
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+        will-change: background-position;
+      }
+
+      @keyframes walk {
+        0% {
+          background-position: 0px 0px;
+        }
+        33.333% {
+          background-position: -200px 0px;
+        }
+        66.666% {
+          background-position: -400px 0px;
+        }
+        100% {
+          background-position: -400px 0px;
+        }
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 0;
+        line-height: 1;
+        color: #222;
+        text-align: left;
+      }
+
+      .title-links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .title-links a {
+        color: #666;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.2s ease;
+      }
+
+      .title-links a:hover {
+        color: #333;
+      }
+
+      .title {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #666;
+      }
+
+      .work-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+
+      .work-links a {
+        color: #666;
+        text-decoration: none;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        transition: color 0.2s ease;
+      }
+
+      .work-links a:hover {
+        color: #333;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        color: #444;
+      }
+
+      p {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #666;
+        line-height: 1.8;
+      }
+
+      section {
+        margin-bottom: 0.25rem;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          height: auto;
+        }
+
+        .left-panel {
+          padding: 2rem 1rem;
+        }
+
+        .right-panel {
+          padding: 2rem 1rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+
+    <!-- Removed dynamic canvas rebuild; using clean CSS keyframes above -->
+  </body>
+</html>
